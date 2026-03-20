@@ -29,8 +29,8 @@ app.use("/api/wishlist", require("./routes/wishlistRoutes"));
 console.log("Registering /api/users...");
 app.use("/api/users", require("./routes/userRoutes"));
 
-app.get("/api/ping", (req, res) => {
-  res.json({ message: "pong", time: new Date() });
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
 });
 
 // Catch-all 404 for debugging
