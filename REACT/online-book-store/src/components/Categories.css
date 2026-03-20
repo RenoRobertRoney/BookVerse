@@ -1,0 +1,247 @@
+/* ================= GLOBAL ================= */
+.categories-container {
+  padding: 80px 10%;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fbfaf8;
+  /* Fallback */
+}
+
+/* Blurred Bookshelf Background */
+.categories-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI1LTA0L3Jhd3BpeGVsX29mZmljZV8zOF9waG90b19odWdlX2Jvb2tzaGVsZl9mdWxsZnJhbWVfYTdhMjExZmUtYzBiZC00ZDI0LTgxMGMtMDZjNDA0ZDFkMjAxLWpvYjIwMTYtbTlqZ25ic3UuanBn.jpg=80');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Subtle Frosted Overlay */
+.categories-container::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 250, 248, 0.85);
+  /* 85% opacity for a premium frost effect */
+  z-index: -1;
+}
+
+/* ================= TITLE ================= */
+.categories-title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 90px;
+  color: #111827;
+  letter-spacing: -2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= SECTION ================= */
+.category-section {
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  color: #111827;
+  border-left: 8px solid #111827;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+}
+
+/* ================= GRID ================= */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 45px;
+}
+
+/* ================= CARD ================= */
+.category-card {
+  height: 200px;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.1), 0 5px 15px -5px rgba(0, 0, 0, 0.05);
+  background-size: cover;
+  background-position: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+/* Dark Overlay for Readability */
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+.category-card>* {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Premium Hover Effect */
+.category-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  /* Added subtle scaling */
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.2);
+}
+
+.category-card:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* ================= BACKGROUND IMAGES ================= */
+/* Fiction */
+.fantasy {
+  background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80');
+}
+
+.romance {
+  background-image: url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&w=800&q=80');
+  /* Couple holding hands, warm sunset */
+}
+
+.scifi {
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80');
+}
+
+.mystery {
+  background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80');
+}
+
+.horror {
+  background-image: url('https://plus.unsplash.com/premium_vector-1722702997976-223c9bbb2b57?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80');
+  /* Dark moody house/forest */
+}
+
+.literary {
+  background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80');
+}
+
+/* Non-Fiction */
+.biography {
+  background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=800&q=80');
+}
+
+.history {
+  background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80');
+}
+
+.selfhelp {
+  background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80');
+}
+
+.science {
+  background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80');
+}
+
+.cooking {
+  background-image: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80');
+}
+
+.business {
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80');
+}
+
+/* Special */
+.manga {
+  background-image: url('https://cdn.shopify.com/s/files/1/0638/7289/3119/files/mangas_480x480.jpg?v=1720570170=80');
+  /* B&W Manga panels */
+}
+
+.comics {
+  background-image: url('https://images.unsplash.com/photo-1588497859490-85d1c17db96d?auto=format&fit=crop&w=800&q=80');
+  /* Colorful comic book panels */
+}
+
+.young {
+  background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80');
+}
+
+.children {
+  background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80');
+}
+
+.arts {
+  background-image: url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80');
+}
+
+.tech {
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80');
+}
+
+.travel {
+  background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80');
+}
+
+.philosophy {
+  background-image: url('https://images.unsplash.com/photo-1529154036614-a60975f5c760?auto=format&fit=crop&w=800&q=80');
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .categories-container {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-container {
+    padding: 40px 20px;
+  }
+
+  .categories-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+  }
+
+  .category-card {
+    height: 160px;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+}

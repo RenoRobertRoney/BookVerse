@@ -1,0 +1,18 @@
+🔌 Connecting to MongoDB...
+Resource: mongodb://127.0.0.1:27017/onlinebookstore_mongo
+✅ Connected successfully!
+📂 Database Name: 'onlinebookstore_mongo'
+------------------------------------------------
+🔍 Listing all users in this database:
+✅ Found 10 users:
+ - Name: ron, Email: ron@gmail.com, Role: user, ID: 6996ac5986c8b40ffd1f80c6
+ - Name: Admin User, Email: admin@example.com, Role: admin, ID: 6996b30ef99f0664d2f484e3
+ - Name: Admin User, Email: admin@gmail.com, Role: admin, ID: 6996b57af61d78c2f4416567
+ - Name: jo, Email: jo@gmail.com, Role: user, ID: 6996b74f85f9a021ab3d6572
+ - Name: edwin, Email: edwin@gmail.com, Role: user, ID: 6996ca6be9852e27b2d36b76
+ - Name: Reno Robert Roney, Email: renorobert777@gmail.com, Role: user, ID: 6996d6b6e9852e27b2d36c08
+ - Name: jomu, Email: jomu@gmail.com, Role: user, ID: 69993c6c360a36b78f34ec3a
+ - Name: sibi, Email: sibi@gmail.com, Role: user, ID: 699e8f3fbf29b8fec032da33
+ - Name: shihan shoukathali, Email: shihan@gmail.com, Role: user, ID: 699e9308bf29b8fec032da77
+ - Name: Rony, Email: rony@gmail.com, Role: user, ID: 699ec0c7ea4763c084807aa2
+------------------------------------------------
