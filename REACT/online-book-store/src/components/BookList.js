@@ -12,7 +12,7 @@ function BookList() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5000/api/books?category=${category}`)
+    axios.get(`https://bookverse-920u.onrender.com/api/books`)
       .then(response => {
         setBooks(response.data);
         setLoading(false);
@@ -51,7 +51,7 @@ function BookList() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/cart",
+        "https://bookverse-920u.onrender.com/api/cart",
         {
           userId: user.userId,
           item: { ...book, quantity: 1 }
@@ -80,7 +80,7 @@ function BookList() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/wishlist",
+        "https://bookverse-920u.onrender.com/api/wishlist",
         {
           userId: user.userId,
           item: book
