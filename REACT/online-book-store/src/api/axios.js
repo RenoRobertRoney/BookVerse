@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // backend URL
+  baseURL: "https://bookverse-920u.onrender.com/api", // backend URL
   withCredentials: true, // important for auth later
 });
 
